@@ -7,7 +7,6 @@ before_script:
 
 
 script:
-    - vendor/bin/phpunit --coverage-clover=coverage.xml
     - phpunit --verbose ./test/test.php
     
 after_success:
@@ -17,6 +16,6 @@ deploy:
   provider: s3
   access_key_id: AKIAJMLXOU5QAR3Y3ADA
   secret_access_key: eeqKLwx+0JxaRD6QMv4RHpX/FF/nLHi72eSc4fN7
-  bucket: avm-example.com
+  bucket: cps847g5.com
   local-dir: s3
-  region: us-east-2
+  region: us-east-1
