@@ -3,9 +3,6 @@ language: php
 php:
     - 5.5
      
-install:
-port install php5-xdebug
-     
 script:
     - phpunit --verbose ./test/test.php
     
