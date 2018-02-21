@@ -7,13 +7,3 @@ php:
 
 env:
     - NODE_ENV="development"      
-
-before_script:
-    - travis_retry composer self-update
-    - travis_retry composer install --no-interaction --prefer-source --dev
-
-script:
-    - vendor/bin/phpunit --coverage-clover=coverage.xml
-
-after_success:
-    - bash <(curl -s https://codecov.io/bash)
