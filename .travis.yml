@@ -5,3 +5,6 @@ php:
      
 script:
     - phpunit --verbose ./test/test.php
+    
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
