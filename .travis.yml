@@ -14,8 +14,8 @@ after_success:
 
 deploy:
   provider: s3
-  access_key_id: AKIAJMLXOU5QAR3Y3ADA
-  secret_access_key: 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
-  bucket: cps847g5
+  access_key_id: AKIAIHVMWLHEDUZ6NWQA
+  secret_access_key: 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
+  bucket: francis.parrilla
   local-dir: s3
   region: us-east-1
