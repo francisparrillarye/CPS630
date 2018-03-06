@@ -12,10 +12,10 @@ script:
 after_success:
   - bash <(curl -s https://codecov.io/bash)
 
-deploy:
-  provider: s3
-  access_key_id: AKIAIHVMWLHEDUZ6NWQA
-  secret_access_key: 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
-  bucket: francis.parrilla
-  local-dir: Assignment2
-  region: us-east-1
+#deploy:
+  #provider: s3
+  #access_key_id: AKIAIHVMWLHEDUZ6NWQA
+  #secret_access_key: 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
+  #bucket: francis.parrilla
+  #local-dir: Assignment2
+  #region: us-east-1
