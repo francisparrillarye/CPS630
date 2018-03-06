@@ -1,6 +1,6 @@
 <?php
 function exp($num){
-  return $num*2;
+  return $num*$num;
 }
 
 ?>
