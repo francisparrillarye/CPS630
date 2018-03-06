@@ -1,6 +1,9 @@
 <?php
 include "function.php"
-$value=4;
-
-return exp($value);
+class PHPTest extends PHPUnit_Framework_TestCase{
+  $value=4; 
+public function test(){
+  return exp($value);
+  }
+}
 ?>
