@@ -7,7 +7,7 @@ before_script:
 
 
 script:
-    - phpunit --verbose ./php_test/
+    - phpunit --verbose ./php_test/test.php
     
 after_success:
   - bash <(curl -s https://codecov.io/bash)
