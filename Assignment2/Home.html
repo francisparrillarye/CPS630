@@ -1,0 +1,125 @@
+<html>
+<head>
+<style>
+
+
+.naviul{
+	list-style-type: none;
+    	margin: 0;
+    	padding: 0;
+    	overflow: hidden;
+    	background-color: #333;
+}
+.navili{
+	float: left;
+	border-right:1px solid #bbb;
+}
+
+.navilia{
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 7px 12px;
+	text-decoration: none;
+
+}
+.nav li:last-child{
+	border-right:none;
+}
+
+.menuul{
+	list-style-type: none;
+    	margin: 0;
+    	padding: 0;
+    	width: 20%;
+	height: 75%;
+    	background-color: #f1f1f1;
+
+    	overflow: auto;
+}
+.menulia{
+	display: block;
+    	color: #000;
+    	padding: 8px 16px;
+    	text-decoration: none;
+}
+.menu li a.active{
+	background-color: #4CAF50;
+	color: white;
+
+}
+#cart{
+	float: right;
+}
+.dropDown{
+	list-style-type; none;
+	display: none;
+}
+#test{
+	display: none;
+}
+
+
+</style>
+
+
+<title>Art Store</title>
+</head>
+<body>
+<ul class="naviul">
+	<li class="navili"><a class="navilia" href="Home.html">Home</a></li>
+	<li class="navili"><a class="navilia" href="About.html">About Us</a></li>
+	<li class="navili"><a class="navilia" href="Blogs.html"">Blogs</a></li>
+	<li class="navili" id = "cart"><a class="navilia" href="Cart.html"">Shopping Cart</a></li>
+</ul>
+
+<ul class="menuul">
+	<li class="menulia">Art Works
+		<ul id="artworks" class="dropDown">
+			<li>Mona Lisa</li>
+			<li>A Day in the Park</li>
+			<li>Mafia Dogs</li>
+			<li>Silly Dogs</li>
+			<li>Mona Lisa Dog???</li>
+		</ul>
+	</li>
+	<li class="menulia">Artists
+		<ul class="dropDown">
+			<li>Leonardo Da Vinci</li>
+			<li>Leonardo DiCaprio???</li>
+			<li>Lmao</li>
+			<li>Pablo Picasso</li>
+			<li>George Michael</li>
+		</ul>
+	</li>
+	<li class="menulia">Museums
+		<ul class="dropDown">
+			<li>Royal Ontario Museum</li>
+			<li>Art Gallery of Ontario</li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</li>
+</ul>
+<p onClick="click()" align="center" id="test1">Click me!</p>
+<p id="test" align="center"> juST cLICKED</p>
+
+<script>
+	function showList(){
+		var list=document.getElementbyId("artworks");
+		if(list.style.display == "none"){
+			list.style.display = "block";
+		}else{
+			list.style.display = "none";
+		}
+	}
+	function click(){
+		document.getElementById("test1").innerHTML = "jinged!!!";
+			
+	}
+
+</script>
+
+</body>
+</html>
