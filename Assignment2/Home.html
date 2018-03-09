@@ -2,6 +2,11 @@
 <head>
 <style>
 
+nav{
+    background-color:lightskyblue;
+    width:250px;
+    height:450px;
+}
 
 .naviul{
 	list-style-type: none;
@@ -29,19 +34,18 @@
 
 .menuul{
 	list-style-type: none;
-    	margin: 0;
-    	padding: 0;
-    	width: 20%;
-	height: 75%;
-    	background-color: #f1f1f1;
-
-    	overflow: auto;
+    margin: 0;
+    padding: 0;
+    //width: 20%;
+	//height: 50%;
+    //background-color: lightskyblue;
+    overflow: auto;
 }
 .menulia{
 	display: block;
-    	color: #000;
-    	padding: 8px 16px;
-    	text-decoration: none;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
 }
 .menu li a.active{
 	background-color: #4CAF50;
@@ -52,13 +56,39 @@
 	float: right;
 }
 .dropDown{
-	list-style-type; none;
-	display: none;
+	list-style-type: none;
+	//display: none;
 }
 #test{
 	display: none;
 }
-
+#artwork{
+   
+    //color: #4CAF50;
+}
+#divimage{
+    width:500px;
+    height:500px;
+    background-color:wheat;
+    float:left;
+}
+#divinfo{
+    width:500px;
+    height:500px;
+    background-color:wheat;
+    float:right;
+}
+div{
+    width:300px;
+    height:300px;
+    background-color:linen;
+    float:right;
+}
+#image{
+    width:500px;
+    height:500px;
+    display:none;
+}
 
 </style>
 
@@ -69,10 +99,10 @@
 <ul class="naviul">
 	<li class="navili"><a class="navilia" href="Home.html">Home</a></li>
 	<li class="navili"><a class="navilia" href="About.html">About Us</a></li>
-	<li class="navili"><a class="navilia" href="Blogs.html"">Blogs</a></li>
-	<li class="navili" id = "cart"><a class="navilia" href="Cart.html"">Shopping Cart</a></li>
+	<li class="navili"><a class="navilia" href="Blogs.html">Blogs</a></li>
+	<li class="navili" id = "cart"><a class="navilia" href="Cart.html">Shopping Cart</a></li>
 </ul>
-
+<!--
 <ul class="menuul">
 	<li class="menulia">Art Works
 		<ul id="artworks" class="dropDown">
@@ -102,10 +132,52 @@
 		</ul>
 	</li>
 </ul>
-<p onClick="click()" align="center" id="test1">Click me!</p>
+-->
+    <nav>
+        <ul class="menuul">
+            <li class="menulia">
+                Art Works
+                <ul id="artworks" class="dropDown">
+                    <li>Mona Lisa</li>
+                    <li>A Day in the Park</li>
+                    <li>Mafia Dogs</li>
+                    <li>Silly Dogs</li>
+                    <li>Mona Lisa Dog???</li>
+                </ul>
+            </li>
+            <li class="menulia">
+                Artists
+                <ul class="dropDown">
+                    <li>Leonardo Da Vinci</li>
+                    <li>Leonardo DiCaprio???</li>
+                    <li>Lmao</li>
+                    <li>Pablo Picasso</li>
+                    <li>George Michael</li>
+                </ul>
+            </li>
+            <li class="menulia">
+                Museums
+                <ul class="dropDown">
+                    <li>Royal Ontario Museum</li>
+                    <li>Art Gallery of Ontario</li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+<p onmousedown="click()" align="center" id="test1">Click me!</p>
 <p id="test" align="center"> juST cLICKED</p>
+    <input type="button" onclick="show()" value="Show image">
+<div id="divimage">
+    <img src="http://images.mentalfloss.com/sites/default/files/styles/mf_image_16x9/public/ahh.png?itok=ddX0cknb&resize=1100x619" id="image">
+</div>
+    <div id="divinfo">
+        <p>info about the image</p>
+    </div>
 
-<script>
+<script type="text/javascript">
 	function showList(){
 		var list=document.getElementbyId("artworks");
 		if(list.style.display == "none"){
@@ -115,8 +187,16 @@
 		}
 	}
 	function click(){
-		document.getElementById("test1").innerHTML = "jinged!!!";
-			
+		document.getElementById("test1").innerHTML = "jinged!!!";			
+	}
+	function show() {
+	    document.getElementById("test1").innerHTML = "clickedy doo";
+	    var img = document.getElementById("image");
+	    if (list.style.display == "none") {
+	        list.style.display = "block";
+	    } else {
+	        list.style.display = "none";
+	    }
 	}
 
 </script>
