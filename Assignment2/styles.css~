@@ -46,6 +46,7 @@ li.dropDown:hover{
 #fullimage{
 	width:100%;
 	height:100%;
+	padding:0;
 }
 
 .menuul{

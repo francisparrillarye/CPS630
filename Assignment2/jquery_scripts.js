@@ -6,11 +6,11 @@ var artworks = [["American Gothic","Pic taken by a person lost at sea","$500","A
 		["sghsjgs","sdovhivbtnttmyumyumyjksdvklsdnv","$8687",""]
 		];
 
-var artists = [["",""],
-	["",""],
-	["",""],
-	["",""],
-	["",""]
+var artists = [["Leonardo Da Vinci","artists1.jpg","Artist1.html","General Desc of da vinci"],
+	["Michaelangelo","artist2.jpg","Artist2.html",""],
+	["Pablo Picasso","artist3.jpg","Artist3.html",""],
+	["Kanye West","artist4.jpg","Artist4.html","Yeezus"],
+	["LeBron James","artist5.jpg","Artist5.html",""]
 ];
 
 $(document).ready(function(){
@@ -85,38 +85,38 @@ $(document).ready(function(){
 		art = artworks[4];
 	});
 	$("#artist1").click(function(){
-		$("#preview").attr("src",artists[4][3]);
+		$("#preview").attr("src",artists[0][1]);
 		$("#title").attr("href", "Artist1.html");
-		$("#title").text("Artist: "+artists[4][0]);
-		$("#desc").text("Description: "+artists[4][1]);
+		$("#title").text("Artist: "+artists[0][0]);
+		$("#desc").text("Description: "+artists[0][3]);
 		$("#price").css("display","none");
 	});
 	$("#artist2").click(function(){
-		$("#preview").attr("src",artists[4][3]);
+		$("#preview").attr("src",artists[1][1]);
 		$("#title").attr("href", "Artist2.html");
-		$("#title").text("Artist: "+artists[4][0]);
-		$("#desc").text("Description: "+artists[4][1]);
+		$("#title").text("Artist: "+artists[1][0]);
+		$("#desc").text("Description: "+artists[1][3]);
 		$("#price").css("display","none");
 	});
 	$("#artist3").click(function(){
-		$("#preview").attr("src",artists[4][3]);
+		$("#preview").attr("src",artists[2][1]);
 		$("#title").attr("href", "Artist3.html");
-		$("#title").text("Artist: "+artists[4][0]);
-		$("#desc").text("Description: "+artists[4][1]);
+		$("#title").text("Artist: "+artists[2][0]);
+		$("#desc").text("Description: "+artists[2][3]);
 		$("#price").css("display","none");
 	});
 	$("#artist4").click(function(){
-		$("#preview").attr("src",artists[4][3]);
+		$("#preview").attr("src",artists[3][1]);
 		$("#title").attr("href", "Artist4.html");
-		$("#title").text("Artist: "+artists[4][0]);
-		$("#desc").text("Description: "+artists[4][1]);
+		$("#title").text("Artist: "+artists[3][0]);
+		$("#desc").text("Description: "+artists[3][3]);
 		$("#price").css("display","none");
 	});
 	$("#artist5").click(function(){
-		$("#preview").attr("src",artists[4][3]);
+		$("#preview").attr("src",artists[4][1]);
 		$("#title").attr("href", "Artist5.html");
 		$("#title").text("Artist: "+artists[4][0]);
-		$("#desc").text("Description: "+artists[4][1]);
+		$("#desc").text("Description: "+artists[4][3]);
 		$("#price").css("display","none");
 	});
 
