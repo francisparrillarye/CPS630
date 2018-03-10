@@ -56,7 +56,7 @@ $(document).ready(function(){
 	});
 	$("#art3").click(function(){
 		$("#preview").attr("src",artworks[2][3]);
-		$("#title").attr("href", "Art3.html");
+		$("#title").attr("href", art3.html);
 		$("#title").text("Title: "+artworks[2][0]);
 		$("#desc").text("Description: "+artworks[2][1]);
 		$("#price").text("Price: "+artworks[2][2]);
