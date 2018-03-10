@@ -1,0 +1,70 @@
+<html>
+<head>
+<title> Art Store 2.0</title>
+<link rel="stylesheet" href="styles.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+</body>
+<div>
+</div>
+
+<div class="row">
+
+	<ul class="naviul">
+		<li class="navili"><a class="navilia" href="Home.html">Home</a></li>
+		<li class="navili"><a class="navilia" href="About.html">About Us</a></li>
+		<li class="navili"><a class="navilia" href="Blogs.html"">Blogs</a></li>
+		<li class="navili" id = "cart"><a class="navilia" href="Cart.html"">Shopping Cart</a></li>
+	</ul>
+
+	<div class="column left" style="background-color:#ddd;">
+		<ul class="menuul">
+			<li class="menulia" onclick="showTest()" id="artworks">Art Works
+				<ul id="artworkslist" class="dropDown">
+					<li id="art1">Mona Lisa</li>
+					<li id="art2">A Day in the Park</li>
+					<li id="art3">Mafia Dogs</li>
+					<li id="art4">Silly Dogs</li>
+					<li id="art5">Mona Lisa Dog???</li>
+				</ul>
+			</li>
+			<li class="menulia" id="artists">Artists
+				<ul id="artistslist" class="dropDown">
+					<li id="artist1">Leonardo Da Vinci</li>
+					<li id="artist2">Leonardo DiCaprio???</li>
+					<li id="artist3">Lmao</li>
+					<li id="artist4">Pablo Picasso</li>
+					<li id="artist5">George Michael</li>
+				</ul>
+			</li>
+			<li class="menulia" id="museums">Museums
+				<ul id="museumslist" class="dropDown">
+					<li>Royal Ontario Museum</li>
+					<li>Art Gallery of Ontario</li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	
+
+	<div class="column middle" style="background-color:#aaa">
+		<img src="" id="preview">
+	</div>
+	
+
+	<div class="column right" style="background-color:#eee" id=breifdesc">
+		<p><a href="Art.html" id="title" onclick="">Title: </a></p><br>
+		<p id="desc">Description: </p><br>
+		<p id="price">Price: </p><br>
+	</div>
+
+</div>
+
+<script src="scripts.js"></script>
+<script src="jquery_scripts.js"></script>
+
+</body>
+</html>
