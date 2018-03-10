@@ -56,7 +56,7 @@
 	
 
 	<div class="column right" style="background-color:#eee" id="breifdesc">
-		<p><a href="Art1.html" id="title" onclick="" id="fimage">Title: </a></p><br>
+		<p><a href="Art1.html" id="title">Title: </a></p><br>
 		<p id="desc">Description: </p><br>
 		<p id="price">Price: </p><br>
 	</div>
