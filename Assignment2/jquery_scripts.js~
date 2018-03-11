@@ -137,12 +137,21 @@ $( function() {
 	$( "#cart" ).on( "click", function() {
       		$( "#cartdialog" ).dialog( "open" );
     	});
+	$( "#totaldialog" ).dialog({	
+		autoOpen: false,
+		show: {
+        		effect: "blind",
+       			duration: 500
+      			},
+      		hide: {
+        		effect: "blind",
+       			duration: 500
+      			}	
+	});
+	$( "#purchase" ).on( "click", function() {
+		$("#cartdialog").dialog("close");
+      		$( "#totaldialog" ).dialog( "open" );
+    	});
   });
 
-$(window).load(function(){
-	$("#title").click(function(){
-		$("#fullimage").attr("src",art[3]);
-		$("#fulldesc").text(art[1]);	
-	});
-	
-});
+

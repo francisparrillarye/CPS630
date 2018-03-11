@@ -2,40 +2,68 @@
 <head>
 <title>American Gothic</title>
 <link rel="stylesheet" href="styles.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 <body>
 <div class="row">
-<ul class="naviul">
+	<ul class="naviul">
 		<li class="navili"><a class="navilia" href="Home2.html">Home</a></li>
 		<li class="navili"><a class="navilia" href="About.html">About Us</a></li>
-		<li class="navili"><a class="navilia" href="Blogs.html"">Blogs</a></li>
+		<li class="navili"><a class="navilia" href="Blogs.html">Blogs</a></li>
 		<li class="navili" id = "cart"><a class="navilia">Shopping Cart</a></li>
 	</ul>
 	<div class="column artimage">
 		<img src="AmericanGothic.jpg" id="fullimage">
-	</div>
-	<div class="column artdesc">
-		<p id="fulldesc">American Gothic...</p>
-
 		<div id="cartdialog" title="Shopping Cart">
 			<p>Please enter details for your purchase.</p>
 			<form>
 				<fieldset>
 					<label for="quantity">Quantity:<label>
-					<input type="text" name="quantity"><br>
+					<input type="text" id="quantity" name="quantity" value="1"><br>
 					<label for="shipping">Shipping:</label><br>	
-					<input type="radio" name="regular">Regular(1-2 weeks)<br>
-					<input type="radio" name="express">Express(less than three days)<br>
-					<input type="radio" name="sameday">Same-Day<br>			
+					<input type="radio" id="delivery1" name="delivery">Regular(1-2 weeks) $5.99<br>
+					<input type="radio" id="delivery2" name="delivery">Express(less than three days) $7.99<br>
+					<input type="radio" id="delivery3" name="delivery">Same-Day $99.99<br>			
+					<input type="button" value="Purchase" onclick="updatePrice()" id="purchase">
 				</fieldset>			
 			</form>	
 		</div>
+		<div id="totaldialog" title="Your Total">
+		<br>
+		<p id="total" color="white"> total is: </p>
+		</div>
+	</div>
+	<div class="column artdesc">
+		<p id="fulldesc"></p>
 	
 	</div>
 </div>
 
+
 <script src="scripts.js"></script>
 <script src="jquery_scripts.js"></script>
+
+<script>
+function updatePrice()	{
+	
+	var quantity = document.getElementById("quantity");
+	var delivery1 = document.getElementById("delivery1");
+	var delivery2 = document.getElementById("delivery2");
+	var delivery3 = document.getElementById("delivery3");
+	var totalDialogBox = document.getElementById("total");
+
+	var total = +quantity.value * +artworks[0][2].substring(1);
+
+	if(delivery1.checked) total += 5.99;
+	if(delivery2.checked) total += 7.99;
+	if(delivery3.checked) total += 99.99;
+	
+	total = total*1.13;
+	totalDialogBox.innerHTML = "Purchase Total: " ;
+
+}
+
 
 
 </body>

@@ -1,9 +1,9 @@
-var artworks = [["American Gothic","Pic taken by a person lost at sea","$500","AmericanGothic.jpg"],
-		["The Persistence of Memory","BBC wildlife","$129","ThePersistenceofMemory.jpg"],
-		["The Scream","ssrnrjrthjrvsd","$085","TheScream.jpg"],
-		["Starry Night","bhbnlmfgngh","$0780","StarryNight.jpg"],
-		["School of Athens","gbjnljynjtyntyntymmtyjjvb vb ","$7476","SchoolofAthens.jpg"],
-		["sghsjgs","sdovhivbtnttmyumyumyjksdvklsdnv","$8687",""]
+var artworks = [["American Gothic","Pic taken by a person lost at sea","500","AmericanGothic.jpg"],
+		["The Persistence of Memory","BBC wildlife","129","ThePersistenceofMemory.jpg"],
+		["The Scream","ssrnrjrthjrvsd","085","TheScream.jpg"],
+		["Starry Night","bhbnlmfgngh","0780","StarryNight.jpg"],
+		["School of Athens","gbjnljynjtyntyntymmtyjjvb vb ","7476","SchoolofAthens.jpg"],
+		["sghsjgs","sdovhivbtnttmyumyumyjksdvklsdnv","8687",""]
 		];
 
 var artists = [["Leonardo Da Vinci","artists1.jpg","Artist1.html","General Desc of da vinci"],
@@ -136,6 +136,21 @@ $( function() {
 	});
 	$( "#cart" ).on( "click", function() {
       		$( "#cartdialog" ).dialog( "open" );
+    	});
+	$( "#totaldialog" ).dialog({	
+		autoOpen: false,
+		show: {
+        		effect: "blind",
+       			duration: 500
+      			},
+      		hide: {
+        		effect: "blind",
+       			duration: 500
+      			}	
+	});
+	$( "#purchase" ).on( "click", function() {
+		$("#cartdialog").dialog("close");
+      		$( "#totaldialog" ).dialog( "open" );
     	});
   });
 

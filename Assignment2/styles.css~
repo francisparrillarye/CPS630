@@ -47,6 +47,10 @@ li.subitem:hover{
 	width:100%;
 	height:100%;
 }
+#cartdialog, #totaldialog{
+	background-color: red;
+	color: white;
+}
 
 .menuul{
 	list-style-type: none;
