@@ -3,6 +3,7 @@
 <title> Art Store 2.0</title>
 <link rel="stylesheet" href="styles.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 </body>
 <div>
@@ -14,7 +15,7 @@
 		<li class="navili"><a class="navilia" href="Home2.html">Home</a></li>
 		<li class="navili"><a class="navilia" href="About.html">About Us</a></li>
 		<li class="navili"><a class="navilia" href="Blogs.html"">Blogs</a></li>
-		<li class="navili" id = "cart"><a class="navilia" href="Cart.html"">Shopping Cart</a></li>
+		<li class="navili" id = "cart"><a class="navilia">Shopping Cart</a></li>
 	</ul>
 
 	<div class="column left" style="background-color:#ddd;">
@@ -58,8 +59,25 @@
 	<div class="column right" style="background-color:#eee" id="breifdesc">
 		<p><a href="Art1.html" id="title">Title: </a></p><br>
 		<p id="desc">Description: </p><br>
-		<p id="price">Price: </p><br>
+		<p id="price">Price: </p><br>		
+		<div id="dialog" title="Shopping Cart">
+			<p>Your Shopping Cart!</p>
+		</div>
+		<div id="cartdialog" title="Shopping Cart">
+			<p>Please enter details for your puschase.</p>
+			<form>
+				<fieldset>
+					<label for="quantity">Quantity:<label>
+					<input type="text" name="quantity"><br>
+					<label for="shipping">Shipping</label><br>	
+					<input type="radio" name="regular">Regular(1-2 weeks)<br>
+					<input type="radio" name="express">Express(less than a week)<br>
+					<input type="radio" name="sameday">Same-Day<br>			
+				</fieldset>			
+			</form>
+		</div>
 	</div>
+	
 
 </div>
 
