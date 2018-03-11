@@ -2,6 +2,8 @@
 <head>
 <title>American Gothic</title>
 <link rel="stylesheet" href="styles.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 <body>
 <div class="row">
@@ -13,8 +15,12 @@
 	</ul>
 	<div class="column artimage">
 		<img src="AmericanGothic.jpg" id="fullimage">
+	</div>
+	<div class="column artdesc">
+		<p id="fulldesc">American Gothic...</p>
+
 		<div id="cartdialog" title="Shopping Cart">
-			<p>Please enter details for your puschase.</p>
+			<p>Please enter details for your purchase.</p>
 			<form>
 				<fieldset>
 					<label for="quantity">Quantity:<label>
@@ -26,13 +32,10 @@
 				</fieldset>			
 			</form>	
 		</div>
-
-	</div>
-	<div class="column artdesc">
-		<p id="fulldesc"></p>
 	
 	</div>
 </div>
+
 <script src="scripts.js"></script>
 <script src="jquery_scripts.js"></script>
 

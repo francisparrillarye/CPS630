@@ -2,14 +2,33 @@
 <head>
 <title>heeyy</title>
 <link rel="stylesheet" href="styles.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 <body>
+<div class="row">
+
 <div class="column artimage">
 <img src="TheScream.jpg" id="fullimage">
 
 </div>
 <div class="column artdesc">
 <p id="fulldesc"></p>
+</div>
+
+<div id="cartdialog" title="Shopping Cart">
+			<p>Please enter details for your puschase.</p>
+			<form>
+				<fieldset>
+					<label for="quantity">Quantity:<label>
+					<input type="text" name="quantity"><br>
+					<label for="shipping">Shipping</label><br>	
+					<input type="radio" name="regular">Regular(1-2 weeks)<br>
+					<input type="radio" name="express">Express(less than a week)<br>
+					<input type="radio" name="sameday">Same-Day<br>			
+				</fieldset>			
+			</form>
+		</div>
 </div>
 <script src="scripts.js"></script>
 <script src="jquery_scripts.js"></script>

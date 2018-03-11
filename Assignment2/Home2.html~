@@ -70,9 +70,9 @@
 					<label for="quantity">Quantity:<label>
 					<input type="text" name="quantity"><br>
 					<label for="shipping">Shipping</label><br>	
-					<input type="radio" value="regulr">Regular(1-2 weeks)<br>
-					<input type="radio" value="express">Express(less than a week)<br>
-					<input type="radio" value="sameday">Same-Day<br>			
+					<input type="radio" name="regular">Regular(1-2 weeks)<br>
+					<input type="radio" name="express">Express(less than a week)<br>
+					<input type="radio" name="sameday">Same-Day<br>			
 				</fieldset>			
 			</form>
 		</div>

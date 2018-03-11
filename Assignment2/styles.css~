@@ -33,7 +33,7 @@ li.navili:hover{
 li.menulia:hover{
 	background-color: green;
 }
-li.dropDown:hover{
+li.subitem:hover{
 	background-color: yellow;
 }
 #cart{
