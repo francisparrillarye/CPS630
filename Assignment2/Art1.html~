@@ -4,38 +4,21 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="row">
 <ul class="naviul">
-		<li class="navili"><a class="navilia" href="Home2.html">Home</a></li>
-		<li class="navili"><a class="navilia" href="About.html">About Us</a></li>
-		<li class="navili"><a class="navilia" href="Blogs.html"">Blogs</a></li>
-		<li class="navili" id = "cart"><a class="navilia">Shopping Cart</a></li>
-	</ul>
-	<div class="column artimage">
-		<img src="AmericanGothic.jpg" id="fullimage">
-		<div id="cartdialog" title="Shopping Cart">
-		<p>Please enter details for your puschase.</p>
-		<form>
-			<fieldset>
-				<label for="quantity">Quantity:<label>
-				<input type="text" name="quantity"><br>
-				<label for="shipping">Shipping:</label><br>	
-				<input type="radio" name="regular">Regular(1-2 weeks)<br>
-				<input type="radio" name="express">Express(less than three days)<br>
-				<input type="radio" name="sameday">Same-Day<br>			
-			</fieldset>			
-		</form>
-	</div>
+	<li class="navili" id = "cart"><a class="navilia" id="passParam">Shopping Cart</a></li>
+</ul>
 
-	</div>
-	<div class="column artdesc">
-		<p id="fulldesc"></p>
-	
-	</div>
+<div class="column artimage">
+<img src="AmericanGothic.jpg" id="fullimage">
+
+</div>
+<div class="column artdesc">
+<p id="fulldesc"></p>
 </div>
 <script src="scripts.js"></script>
 <script src="jquery_scripts.js"></script>
-
+<script> setHrefWithParam(0); </script>
 
 </body>
+
 </html>

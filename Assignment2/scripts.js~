@@ -8,13 +8,3 @@ function showList(){
 function testShow(){
 	document.getElementById("test").innerHTML = "pressed";	
 }
-function parseUrl(url)	{
-	var index = url.substring(url.indexOf("=")+1);
-	return +index;
-}
-
-function setHrefWithParam(index)	{
-	var url="Cart.html?Key=" + index;
-	document.getElementById("passParam").setAttribute("href", url);
-}
-

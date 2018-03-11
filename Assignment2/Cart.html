@@ -4,6 +4,9 @@
 <title></title>
 </head>
 <body>
+<script src="scripts.js"></script>
+<script src="jquery_scripts.js"></script>
+
 <div class="row">
 	<ul class="naviul">
 		<li class="navili"><a class="navilia" href="Home2.html">Home</a></li>
@@ -14,5 +17,12 @@
 
 	<p>Your Shopping Cart</p>
 </div>
+
+<script>
+	var index = parseUrl(window.location.toString());
+	!isNaN(index) && document.write('Price: ' + artworks[index][2]);
+</script>
+
 </body>
+
 </html>
