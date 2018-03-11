@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>heeyy</title>
+<title>Starry Night</title>
 <link rel="stylesheet" href="styles.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -14,7 +14,7 @@
 		<li class="navili" id = "cart"><a class="navilia">Shopping Cart</a></li>
 	</ul>
 	<div class="column artimage">
---->		<img src="AmericanGothic.jpg" id="fullimage">
+		<img src="StarryNight.jpg" id="fullimage">
 		<div id="cartdialog" title="Shopping Cart">
 			<p>Please enter details for your purchase.</p>
 			<form>
