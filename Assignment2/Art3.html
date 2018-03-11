@@ -79,7 +79,7 @@ function updatePrice()	{
 	}
 	
 	total = (total+shipPrice)*1.13;
-	orderDetails.innerHTML = " You ordered " + quantity.value +"The Scream artwork: $" +quantity.value*price ;
+	orderDetails.innerHTML = " You ordered " + quantity.value +" The Scream artwork: $" +quantity.value*price ;
 	shipMethod.innerHTML = "Shipping Method: " + deliMethod + " Cost:$" + shipPrice;
 	totalDialogBox.innerHTML = "Purchase Total: " +total.toFixed(2);
 

@@ -6,11 +6,11 @@ var artworks = [["American Gothic","Pic taken by a person lost at sea",500,"Amer
 		["sghsjgs","sdovhivbtnttmyumyumyjksdvklsdnv",8687,""]
 		];
 
-var artists = [["Leonardo Da Vinci","artists1.jpg","Artist1.html","General Desc of da vinci"],
-	["Michaelangelo","artist2.jpg","Artist2.html",""],
-	["Pablo Picasso","artist3.jpg","Artist3.html",""],
-	["Kanye West","artist4.jpg","Artist4.html","Yeezus"],
-	["LeBron James","artist5.jpg","Artist5.html",""]
+var artists = [["Leonardo Da Vinci","DaVinci.jpg","Artist1.html","General Desc of da vinci"],
+	["Vincent Van Gogh","vanGogh.jpg","Artist2.html",""],
+	["Johannes Vermer","Vermer.jpg","Artist3.html",""],
+	["Gustav Klimt","Klimt.jpg","Artist4.html","Yeezus"],
+	["Pablo Picasso","picasso.jpg","Artist5.html",""]
 ];
 
 $(document).ready(function(){
