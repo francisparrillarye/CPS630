@@ -122,10 +122,21 @@ $(document).ready(function(){
 
 });
 
-$(window).load(function(){
-	$("#title").click(function(){
-		$("#fullimage").attr("src",art[3]);
-		$("#fulldesc").text(art[1]);	
+$( function() {
+    $( "#cartdialog" ).dialog({	
+		autoOpen: false,
+		show: {
+        		effect: "blind",
+       			duration: 1000
+      			},
+      		hide: {
+        		effect: "blind",
+       			duration: 1000
+      			}	
 	});
-	
-});
+	$( "#cart" ).on( "click", function() {
+      		$( "#cartdialog" ).dialog( "open" );
+    	});
+  });
+
+
