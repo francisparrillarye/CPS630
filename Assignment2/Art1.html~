@@ -72,12 +72,13 @@ function updatePrice()	{
 	}
 	if(delivery3.checked){
 	deliMethod = "Same-Day";
+	shipPrice = 99;
 
 	}
 	
 	total = (total+shipPrice)*1.13;
 	orderDetails.innerHTML = " You ordered " + quantity.value +" American Gothic artwork: $" +quantity.value*price ;
-	shipMethod.innerHTML = "Shipping Method: " + deliMethod + " Cost:" + shipPrice;
+	shipMethod.innerHTML = "Shipping Method: " + deliMethod + " Cost:$" + shipPrice;
 	totalDialogBox.innerHTML = "Purchase Total: " +total.toFixed(2);
 
 }

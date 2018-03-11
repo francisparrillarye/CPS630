@@ -31,6 +31,10 @@
 		</div>
 		<div id="totaldialog" title="Your Total">
 		<br>
+		<p id="orderdetails"></p>
+		</br>
+		<p id="shipping"></p>
+		<br>
 		<p id="total" color="white"> total is: </p>
 		</div>
 	</div>
@@ -46,23 +50,39 @@
 
 <script>
 function updatePrice()	{
-	var price = 850;
+	var price = 500;
 	var quantity = document.getElementById("quantity");
 	var delivery1 = document.getElementById("delivery1");
 	var delivery2 = document.getElementById("delivery2");
 	var delivery3 = document.getElementById("delivery3");
 	var totalDialogBox = document.getElementById("total");
-
+	var orderDetails = document.getElementById("orderdetails");
+	var shipMethod = document.getElementById("shipping");
+	var deliMethod ="";
+	var shipPrice = 0;
 	var total = quantity.value * price;
 
-	if(delivery1.checked) total += 5.99;
-	if(delivery2.checked) total += 7.99;
-	if(delivery3.checked) total += 99.99;
+	if(delivery1.checked){
+	deliMethod = "Regular (1-2 weeks)";
+	shipPrice = 5.99;
+	 }
+	if(delivery2.checked){
+	deliMethod = "Express(less than 1 week)";
+	shipPrice = 7.99;
+	}
+	if(delivery3.checked){
+	deliMethod = "Same-Day";
+	shipPrice = 99;
+
+	}
 	
-	total = total*1.13;
-	totalDialogBox.innerHTML = "Purchase Total: " +total;
+	total = (total+shipPrice)*1.13;
+	orderDetails.innerHTML = " You ordered " + quantity.value +"The Scream artwork: $" +quantity.value*price ;
+	shipMethod.innerHTML = "Shipping Method: " + deliMethod + " Cost:$" + shipPrice;
+	totalDialogBox.innerHTML = "Purchase Total: " +total.toFixed(2);
 
 }
 </script>
+
 </body>
 </html>
