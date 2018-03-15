@@ -1,0 +1,9 @@
+<?php
+$username= "fparril";
+$password="localhost";
+$server = "localhost";
+$database = "fparrill";
+
+$conn = new mysqli($server $username, $password, $database);
+
+?>

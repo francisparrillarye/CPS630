@@ -1,0 +1,88 @@
+<html>
+<head>
+<title>The Persistence of Memory</title>
+<link rel="stylesheet" href="styles.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+<div class="row">
+	<ul class="naviul">
+		<li class="navili"><a class="navilia" href="Home2.html">Home</a></li>
+		<li class="navili"><a class="navilia" href="About.html">About Us</a></li>
+		<li class="navili"><a class="navilia" href="Blogs.html">Blogs</a></li>
+		<li class="navili" id = "cart"><a class="navilia">Shopping Cart</a></li>
+	</ul>
+	<div class="column artimage">
+		<img src="ThePersistenceofMemory.jpg" id="fullimage">
+		<div id="cartdialog" title="Shopping Cart">
+			<p>Please enter details for your purchase.</p>
+			<form>
+				<fieldset>
+					<label for="quantity">Quantity:<label>
+					<input type="text" id="quantity" name="quantity" value="1"><br>
+					<label for="shipping">Shipping:</label><br>	
+					<input type="radio" id="delivery1" name="delivery">Regular(1-2 weeks) $5.99<br>
+					<input type="radio" id="delivery2" name="delivery">Express(less than three days) $7.99<br>
+					<input type="radio" id="delivery3" name="delivery">Same-Day $99.99<br>			
+					<input type="button" value="Purchase" onclick="updatePrice()" id="purchase">
+				</fieldset>			
+			</form>	
+		</div>
+		<div id="totaldialog" title="Your Total">
+		<br>
+		<p id="orderdetails"></p>
+		</br>
+		<p id="shipping"></p>
+		<br>
+		<p id="total" color="white"> total is: </p>
+		</div>
+	</div>
+	<div class="column artdesc">
+		<p id="fulldesc">The Persistence of Memory (Catalan: La persistència de la memòria) is a 1931 painting by artist Salvador Dalí, and is one of his most recognizable works. First shown at the Julien Levy Gallery in 1932, since 1934 the painting has been in the collection of the Museum of Modern Art (MoMA) in New York City, which received it from an anonymous donor. It is widely recognized and frequently referenced in popular culture,[1] and sometimes referred to by more descriptive (though incorrect) titles, such as 'Melting Clocks', 'The Soft Watches' or 'The Melting Watches'.</p>
+	
+	</div>
+</div>
+
+
+<script src="scripts.js"></script>
+<script src="jquery_scripts.js"></script>
+
+<script>
+function updatePrice()	{
+	var price = 500;
+	var quantity = document.getElementById("quantity");
+	var delivery1 = document.getElementById("delivery1");
+	var delivery2 = document.getElementById("delivery2");
+	var delivery3 = document.getElementById("delivery3");
+	var totalDialogBox = document.getElementById("total");
+	var orderDetails = document.getElementById("orderdetails");
+	var shipMethod = document.getElementById("shipping");
+	var deliMethod ="";
+	var shipPrice = 0;
+	var total = quantity.value * price;
+
+	if(delivery1.checked){
+	deliMethod = "Regular (1-2 weeks)";
+	shipPrice = 5.99;
+	 }
+	if(delivery2.checked){
+	deliMethod = "Express(less than 1 week)";
+	shipPrice = 7.99;
+	}
+	if(delivery3.checked){
+	deliMethod = "Same-Day";
+	shipPrice = 99;
+
+	}
+	
+	total = (total+shipPrice)*1.13;
+	orderDetails.innerHTML = " You ordered " + quantity.value +"The Persistence of Memory artwork: $" +quantity.value*price ;
+	shipMethod.innerHTML = "Shipping Method: " + deliMethod + " Cost:$" + shipPrice;
+	totalDialogBox.innerHTML = "Purchase Total: " +total.toFixed(2);
+
+}
+</script>
+
+</body>
+</html>

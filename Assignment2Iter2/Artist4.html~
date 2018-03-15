@@ -1,0 +1,29 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+<title>Gustav Klimt</title>
+</head>
+<body>
+<div class="row">
+	<ul class="naviul">
+		<li class="navili"><a class="navilia" href="Home2.html">Home</a></li>
+		<li class="navili"><a class="navilia" href="About.html">About Us</a></li>
+		<li class="navili"><a class="navilia" href="Blogs.html">Blogs</a></li>
+		<li class="navili" id = "cart"><a class="navilia">Shopping Cart</a></li>
+	</ul>
+	<div class="column artimage">
+		<img src="Klimt.jpg" id="fullimage">
+		
+		
+	</div>
+	<div class="column artdesc">
+		<p id="fulldesc"></p>
+	
+	</div>
+</div>
+
+
+<script src="scripts.js"></script>
+<script src="jquery_scripts.js"></script>
+</body>
+</html>

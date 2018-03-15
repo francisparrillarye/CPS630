@@ -1,0 +1,29 @@
+HTML:
+-every webpage has the navigation bar Home, About Us, Blogs and Shopping Cart
+-when a menu is selected a list of subitems appear, when Art Works menu is clicked, jQuery handles the click event and shows a list of art works. This also works for Artists and Museums
+-when an item on the list is selected, jQuery changes the source image in the img element as well as content on the basic info column of the webpage
+-when the title or artist name is clicked on the right it will link you to the page of whatever art works or artist you selected
+
+CSS:
+-used to help with design layout and design
+
+Javascript:
+-updatePrice() script is executed when the Shoppping Cart icon is clicked on one of the art pages. It calculates how much the total is for your purchase including the shipping and tax
+
+DOM:
+-most tags and elements in the webpages have ids so they can be found and change its attribute when needed
+-used to identify elements and tags to change its content when an event is triggered
+
+JQuery:
+- the art works and artists details such as its images and description are stored in their respective array which is then accessed by jQuery
+- handles all click events on all webpages
+- when the shopping cart icon is clicked a dialog box appears asking you how many you want to buy and the shipping method you want
+
+Members:
+Francis Parrilla
+-worked on page layout for the web pages and css styles
+-worked on jQuery click events handling
+
+Sung Oh
+-worked on the shopping cart functionality and art and artists information
+
