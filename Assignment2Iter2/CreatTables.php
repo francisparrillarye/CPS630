@@ -20,7 +20,7 @@ try{
 }
 
 //creat Artworks table
-$query = "Create Table Artworks(ID int, Title VARCHAR(30), Artist VARCHAR(30), Image int, Genre VARCHAR(30), Subject VARCHAR(30), Museum VARCHAR(50), Reviews int)";
+$query = "Create Table Artworks(ID int, Title VARCHAR(30), Artist VARCHAR(30), Image VARCHAR(100), Genre VARCHAR(30), Subject VARCHAR(30), Museum VARCHAR(50), Reviews int)";
 try{
     mysqli_query($conn, $query);
     echo "Created tables Artists<br>";
@@ -29,7 +29,7 @@ try{
 }
 
 //create Images table
-$query = "Create Table Images(ID int, Title VARCHAR(255))";
+$query = "Create Table Images(ID int, Filename VARCHAR(255))";
 try{
     mysqli_query($conn, $query);
     echo "Created tables Artists<br>";
