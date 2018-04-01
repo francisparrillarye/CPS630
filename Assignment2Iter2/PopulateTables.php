@@ -25,12 +25,12 @@ try{
 }
 
 //populate Artworks table-----------------------
-$query = 'INSERT INTO Artworks(ID, Title, Artist, Image, Genre, Subject)
-        VALUES(1, "American Gothic","idk", 1, "idk", "idk"),
-        (2, "The Persistence of Time","idk", 2,"idk","idk"),
-        (3, "The Scream", "dfb", 3, "bdfbdf", "sv"),
-        (4, "Starry Night", "dfb", 4, "dbd", "bdb"),
-        (5, "School of Athens", "dfb", 5, "dbd", "bdb") ';
+$query = 'INSERT INTO Artworks(ID, Title, Artist, Image, Genre, Subject, Price)
+        VALUES(1, "American Gothic","idk", 1, "idk", "idk", 500),
+        (2, "The Persistence of Time","idk", 2,"idk","idk",1000),
+        (3, "The Scream", "dfb", 3, "bdfbdf", "sv", 2500),
+        (4, "Starry Night", "dfb", 4, "dbd", "bdb", 5000),
+        (5, "School of Athens", "dfb", 5, "dbd", "bdb", 1250) ';
 try{
     mysqli_query($conn, $query);
     echo "Populated table Artworks<br>";

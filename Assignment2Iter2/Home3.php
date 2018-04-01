@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 <title> Art Store 3.0</title>
@@ -22,30 +23,20 @@
 		<ul class="menuul">
 			<li class="menulia" id="artworks">Art Works
 				<ul id="artworkslist" class="dropDown">
-                    <?php artworks();?>
-					<li id="art1" class="subitem">American Gothic</li>
-					<li id="art2" class="subitem">The Persistence of Memory</li>
-					<li id="art3" class="subitem">The Scream</li>
-					<li id="art4" class="subitem">Starry Night</li>
-					<li id="art5" class="subitem">School of Athens</li>
+                    <?php listArtworks();?>
+					
 				</ul>
 			</li>
 			<li class="menulia" id="artists">Artists
 				<ul id="artistslist" class="dropDown">
-					<li id="artist1" class="subitem">Leonardo Da Vinci</li>
-					<li id="artist2" class="subitem">Vincent Van Gogh</li>
-					<li id="artist3" class="subitem">Johannes Vermer</li>
-					<li id="artist4" class="subitem">Gustav Klimt</li>
-					<li id="artist5" class="subitem">Pablo Picasso</li>
+                    <?php listArtists();?>
+					
 				</ul>
 			</li>
 			<li class="menulia" id="museums">Museums
 				<ul id="museumslist" class="dropDown">
-					<li id="museum" class="subitem">Royal Ontario Museum</li>
-					<li id="museum" class="subitem">Art Gallery of Ontario</li>
-					<li id="museum" class="subitem">The Louvre</li>
-					<li id="museum" class="subitem">Art Institute of Chicago</li>
-					<li id="museum" class="subitem">National Gallery London</li>
+                    <?php listMuseums(); ?>
+					
 				</ul>
 			</li>
 		</ul>
@@ -83,6 +74,7 @@
 
 <script src="scripts.js"></script>
 <script src="jquery_scripts.js"></script>
+<script src="functions.php"></script>
 
 </body>
 </html>
