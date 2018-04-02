@@ -1,0 +1,18 @@
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+<title></title>
+</head>
+<body>
+<div class="row">
+	<ul class="naviul">
+		<li class="navili"><a class="navilia" href="Home2.html">Home</a></li>
+		<li class="navili"><a class="navilia" href="About.html">About Us</a></li>
+		<li class="navili"><a class="navilia" href="Blogs.html">Blogs</a></li>
+		<li class="navili" id = "cart"><a class="navilia" href="Cart.html">Shopping Cart</a></li>
+	</ul>
+    <?php listReviews(); ?>
+	<p>Blogs?....</p>
+</div>
+</body>
+</html>
